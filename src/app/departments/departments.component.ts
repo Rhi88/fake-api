@@ -22,7 +22,7 @@ export class DepartmentsComponent implements OnInit {
     .subscribe(departments => this.departments = departments);
   }
 
-  creadteDepartment(): void {
+  createDepartment(): void {
     this.departmentService.createDepartment(this.newDepartment)
     .subscribe(department => {
       this.departments.push(department);
